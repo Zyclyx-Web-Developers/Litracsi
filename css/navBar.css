@@ -1,0 +1,16 @@
+#header .contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#header .contact a{
+    color: white;
+    text-decoration: none;
+}
+#navBar .nav a{
+    color: #fff;
+}
+#navBar .nav-link {
+    display: block;
+    padding: 1.25rem 2rem;
+}
