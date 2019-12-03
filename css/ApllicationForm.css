@@ -1,0 +1,31 @@
+body{
+	background: url("../img/Form-bg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+.heading{
+		color:#0b5d77;
+		line-height: 1.5;
+	}
+.bar{
+	background: #e6eefa;
+}
+.legend{
+	 display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    /*color: #0b5d77;*/
+    color: #007bff;
+    font-weight: 500;
+}
+.bx-shadow{
+	box-shadow:0px 0px 10px grey; background:#fff;
+}
