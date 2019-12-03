@@ -1,3 +1,16 @@
+.title-1:before{
+    position: absolute;
+    bottom:-15px;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    height: 3px;
+    width: 75px;
+    background-color: #d55342;
+    content: "";
+    border-radius: 50%;
+}
+
 .overlay{
     position: relative;
 }
@@ -8,13 +21,15 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    background: rgba(255,199,90,0.9);
+    /* background: rgba(255,199,90,0.9); */
+    background-color:rgba(20, 202, 185,0.9);
 }
 .carousel-item{
     max-height: 100vh !important;
 }
 .homecardbg{
     background: hsl(194, 71%, 74%);
+    padding: 30px;
     /* border: .5px solid rgba(129, 129, 129, .5); */
 }
 
@@ -32,11 +47,11 @@
 
 /* UpComming Events */
 #events{
-    height: 550px;
-    background:blanchedalmond;
+    height: 700px;
+    background:#e5e5e5;
 }
 #events .Event-bg-top{
-height: 350px;
+height:354px;
 width: 100%;
 padding: 50px;
 background-image: url("../img/health-event.jpg");
@@ -51,14 +66,28 @@ background-size: cover;
     align-items: center;
     margin-left: 5px;
     position: absolute;
-    top: calc(88% - 1px);
+    top: calc(88% - -16px);
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 .eventsCards .card{
-    width: 300px;
-    border-radius: 5px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 6px 13px rgba(214,214,214,.75);
+    overflow: hidden;
+    border: none;
 }
-
+.Event-timmings{
+    color: #959393;
+}
+.moreEventBtn{
+margin-top: 240px;
+}
+.moreEventBtn:hover{
+    color: rgb(29, 32, 34);
+}
+.moreEventBtn{
+    background-color:rgba(20, 202, 185,0.9);
+    color: aliceblue;
+}
 /* Upcomming Events End */
