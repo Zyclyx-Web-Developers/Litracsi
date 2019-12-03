@@ -1,3 +1,46 @@
 .home-container{
     height: 90vh;
+    background-image: url('../img/medical.jpg');
+    background-repeat:no-repeat;
+    position: relative;
+}
+.header-title h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.header-title p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.eventDate{
+    font-weight: 500;
+}
+.events .card .card-img-top{
+    height: 150px;
+}
+.events .card{
+    border: none;
+    background: transparent;
+}
+.events .card-body{
+    border: 1px solid rgba(0, 123, 255,0.5);
+    margin: 8px;
+    border-radius: 8px;
+    padding-bottom: 0px !important;
+}
+.events .card-title{
+    min-height: 48px;
+}
+.overlay{
+    position: relative;
+
+}
+.overlay::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
