@@ -1,0 +1,64 @@
+.overlay{
+    position: relative;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255,199,90,0.9);
+}
+.carousel-item{
+    max-height: 100vh !important;
+}
+.homecardbg{
+    background: hsl(194, 71%, 74%);
+    /* border: .5px solid rgba(129, 129, 129, .5); */
+}
+
+/* What We Do */
+.what-we-do .card{
+    border: none !important;
+    text-align: center;
+    margin: 0 auto;
+}
+.what-we-do .card:hover{
+   box-shadow: 0 6px 13px rgba(214,214,214,.75);
+}
+
+/* What We Do End */
+
+/* UpComming Events */
+#events{
+    height: 550px;
+    background:blanchedalmond;
+}
+#events .Event-bg-top{
+height: 350px;
+width: 100%;
+padding: 50px;
+background-image: url("../img/health-event.jpg");
+background-position: 0px 0px;
+background-attachment: scroll;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.eventsCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    position: absolute;
+    top: calc(88% - 1px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.eventsCards .card{
+    width: 300px;
+    border-radius: 5px;
+}
+
+/* Upcomming Events End */
