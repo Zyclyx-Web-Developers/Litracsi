@@ -1,3 +1,12 @@
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+.green{
+    color:rgba(20, 202, 185,0.9) ;
+}
+.red{
+    color: #dc3545;
+}
 .title-1{
     position: relative;
 }
@@ -13,6 +22,18 @@
     content: "";
     border-radius: 50%;
 }
+.overlay1{
+    position: relative;
+}
+/* .overlay1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(79, 85, 84, 0.4);
+} */
 
 .overlay{
     position: relative;
@@ -27,8 +48,16 @@
     /* background: rgba(255,199,90,0.9); */
     background-color:rgba(20, 202, 185,0.9);
 }
+.carousel-caption{
+    top:35%;
+}
 .carousel-item{
     max-height: 100vh !important;
+ /* background-color:rgba(20, 202, 185,0.6); */
+    background-color: rgba(7, 7, 7, 0.6);
+}
+.carousel-item img{
+mix-blend-mode:overlay;
 }
 .homecardbg{
     background: hsl(194, 71%, 74%);
@@ -94,3 +123,72 @@ margin-top: 240px;
     color: aliceblue;
 }
 /* Upcomming Events End */
+
+/* Video-Section */
+.video{
+    border-radius: 10px;
+}
+/* videoideo Section end */
+
+/* counter */
+.counter{
+    background: #e4edf5;    
+}
+/* Counter end */
+
+/* Mision and Vision */
+.vision{
+    background-image: url(../img/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 350px;
+    position: relative;
+}
+.vision:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,.2) 30%, rgba(0,123,255,.7) 90%);
+}
+.vision-text{
+    padding: 7rem;
+}
+.vision-text h3{
+    line-height: 1.7;
+}
+/* Mision and Vision  End*/
+.nav-tabs{
+    display:flex;
+    flex-direction: column;
+    border-bottom: none;
+}
+.nav-tabs .nav-link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+}
+.nav-item:hover{
+    /* border: 1px solid bisque; */
+    box-shadow: 0 6px 13px rgba(214,214,214,.75);
+
+}
+.tab-pane h5{
+    line-height:1.6;
+}
+.carousel-caption{
+    animation: fadeup 1s ease-in-out;
+}
+
+@keyframes fadeup{
+    0%{
+        transform: translatey(250px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
