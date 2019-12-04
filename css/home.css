@@ -1,3 +1,6 @@
+.title-1{
+    position: relative;
+}
 .title-1:before{
     position: absolute;
     bottom:-15px;
