@@ -36,6 +36,12 @@
 
 
 </head>
+<script>
+        function color(){
+            document.getElementById(id1).style.backgroundColor = "red";
+            
+        }
+        </script>
 
 <body>
     <div class="container-fluid">
@@ -45,14 +51,14 @@
                 <p class="text-center ">Frequently asked question</p>
             </div>
 
-            <div class="card">
+            <div class="card p-4">
                 <div class="card-body">
                     <div class="accordion faq-list" id="accordionExample">
-
+                    <!-- FAQ - 1 -->
                         <div>
-                            <!-- FAQ - 1 -->
-                            <h2 class="mb-0">
-                                <button class="btn btn-link d-flex justify-content-between w-100" id="btn" type="button" data-toggle="collapse"
+                           
+                            <h2 class="mb-0" id="id1">
+                                <button class="btn btn-link  d-flex justify-content-between w-100" onclick="color()" id="btn" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                    <span>How do I schedule medical appointments with a specialist at Doctor Today?</span>
                                     <i class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>

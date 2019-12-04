@@ -29,8 +29,7 @@
 }  */
  .card{
     margin-top: 142px;
-    width: 842px;
-    
+    width: 842px;    
     margin-left: 97px;
     border-radius: 8px;
     box-shadow: 0 0 5px 0px;
@@ -38,29 +37,27 @@
  .container content{
     padding: 40px;
 } 
+
 .faq-list h2{
-    padding: 1rem;
+    margin: 1.7rem auto;
+}
+
+.faq-list .btn-link{
+    padding:1.3rem 1rem;
     font-size: 1.2rem;
     font-weight: 600;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0,0.2);
-    margin:14px 8px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0,0.2);     
     border-radius: 8px;
-}
-.btn{
+    text-decoration: none !important;
     font-size: 1.2rem;
     font-weight: 600;
-color:black;
-}
-.btn-link{
-    text-decoration: none !important;
+     color:black;
 }
   .btn-link:hover {
     color:#222831;
-
-
 }  
 .card-bodycontent{
-    color: #808080c9;
+    color: #606060;
 }
 .faq-list .fa-angle-down{
     margin-left: 5px;    
@@ -68,6 +65,11 @@ color:black;
 button[aria-expanded=false] .fa-angle-down{
 transition: all 0.1s ease-in-out;
 }
+button[aria-expanded=true]{
+    background-color: #3c3c3c;
+    color: #f4f4f4 !important;
+}
+
 button[aria-expanded=true] .fa-angle-down{
 transition: all 0.1s ease-in-out;
 transform: rotate(180deg);
