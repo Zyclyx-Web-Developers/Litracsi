@@ -1,0 +1,18 @@
+.container{
+    padding: 40px;
+}
+.container-fluid{
+    background-image: url('../img/docterimg1.jpg');
+    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .card{
+    margin-top: 158px;
+} 
+ .container content{
+    padding: 80px;
+} 
+.btn{
+color:#20d7d4;
+}
