@@ -9,8 +9,20 @@
 }
 #navBar .nav a{
     color: #fff;
+    font-weight: 100;
+}
+#navBar .active{
+    background: #000;
+    color: #00b0ff !important;
+    font-weight: 600 !important;
 }
 #navBar .nav-link {
     display: block;
     padding: 1.25rem 2rem;
+}
+.logo-title h2{
+    /* font-family: Ethnocentric; */
+    font-size: 25px !important;
+    font-weight: 700;
+    margin-right: 40px;
 }
