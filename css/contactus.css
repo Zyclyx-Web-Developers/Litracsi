@@ -1,0 +1,43 @@
+.home-container{
+    height: 68vh;
+    background-image: url('../img/contact.jpg');
+    background-repeat:no-repeat;
+    position: relative;
+}
+.overlay{
+    position: relative;
+
+}
+.card{
+    border: none;
+}
+.overlay::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.message{
+    color: rgb(33, 49, 122);
+}
+.locate{
+    color: rgb(33, 49, 122);
+}
+.heading{
+    color: rgb(33, 49, 122);
+}
+.loc{
+    color: rgb(33, 49, 122);
+}
+#Message input{
+    color: rgb(33, 49, 122);
+    font-weight: 600;
+}
+#Message textarea{
+    color: rgb(33, 49, 122);
+    font-weight: 600;
+    resize: none;
+}
