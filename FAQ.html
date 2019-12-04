@@ -1,77 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-       <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/FAQ.css">
-  <meta name="theme-color" content="#fafafa">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- Bootstrap -->
-  
-  <!-- Fontawesome -->
-  <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <meta name="theme-color" content="#fafafa">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   -->
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
 
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="container">
-                    <div class="content">
-                    <h1 class="text-center">FAQ's</h1>
-                    <p class="text-center">Frequently asked question</p>
-                </div>
+            <div class="content">
+                <h1 class="text-center">FAQ's</h1>
+                <p class="text-center ">Frequently asked question</p>
+            </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-body">
+                    <div class="accordion faq-list" id="accordionExample">
 
+                        <div>
+                            <!-- FAQ - 1 -->
+                            <h2 class="mb-0">
+                                <button class="btn btn-link d-flex justify-content-between w-100" id="btn" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                   <span>How do I schedule medical appointments with a specialist at Doctor Today?</span>
+                                    <i class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                                </button>
+                            </h2>
+                        </div>
 
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How do I schedule medical appointments with a specialist at Doctor Today?
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        You or your attendant can contact the International Patients Service Centre of the location of your choice, via telephone, fax, email or letter. Details are available at the Contact us section of this website. Alternatively, you can fill in the form available in the website in the Contact Us section.
-
-
-                                      </div>
-                                  </div>
-                                  <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
-                                        When making a medical appointment what information must I provide?
-                                    </button>
-                                  </h2>
-                                  <div id="collapsetwo" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                      </div>
-                                  </div>
-                                  <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsethird" aria-expanded="true" aria-controls="collapseOne">
-                                        When making a medical appointment what information must I provide?
-                                    </button>
-                                  </h2>
-                                  <div id="collapsethird" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                      </div>
-                                  </div>
+                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                You or your attendant can contact the International Patients Service Centre of the
+                                location of your choice, via telephone, fax, email or letter. Details are available at
+                                the Contact us section of this website. Alternatively, you can fill in the form
+                                available in the website in the Contact Us section.
                             </div>
                         </div>
+
+                        <!-- FAQ - 2 -->
+                        <h2 class="mb-0">
+                            <button class="btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapsetwo"
+                                aria-expanded="false" aria-controls="collapseOne">
+                               <span>When making a medical appointment what information must I provide?</span>
+                                <i class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapsetwo" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                        <!-- FAQ - 3 -->
+                        <h2 class="mb-0">
+                            <button class="btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse"
+                                data-target="#collapsethird" aria-expanded="false" aria-controls="collapseOne">
+                                When making a medical appointment what information must I provide? <i
+                                    class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapsethird" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+
+                        <!-- FAQ - 4 -->
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse"
+                                data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                How do I schedule medical appointments with a specialist at Doctor Today? <i
+                                    class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                You or your attendant can contact the International Patients Service Centre of the
+                                location of your choice, via telephone, fax, email or letter. Details are available at
+                                the Contact us section of this website. Alternatively, you can fill in the form
+                                available in the website in the Contact Us section.
+
+                            </div>
+                        </div>
+                        <!-- FAQ - 5 -->
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse"
+                                data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                When making a medical appointment what information must I provide? <i
+                                    class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapsefive" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+                        <!-- FAQ - 6 -->
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse" data-target="#collapsesix"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                When making a medical appointment what information must I provide? <i
+                                    class="fas fa-angle-down rotate-icon fa-1x " id="arrow"></i>
+                            </button>
+                        </h2>
+                        <div id="collapsesix" class="collapse " aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body card-bodycontent">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+                                craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth
+                                nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
                     </div>
-           
+                </div>
+            </div>
+
         </div>
 
     </div>
+    <script>
+            // var btn = document.getElementById('btn');
+            //    var img = document.getElementById('arrow');             
+            //     btn.addEventListener('click',function(e){
+                      //img.style.transform = 'rotate(180deg)';
+        //              img.classList.toggle("rotate");
+        //  })
+
+            // function flip(){
+            //     var img = document.getElementById('arrow');
+            //     img.classList.toggle("rotate");
+            // }
+
+
+
+    </script>
 </body>
+
 </html>
