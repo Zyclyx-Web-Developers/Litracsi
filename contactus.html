@@ -15,9 +15,14 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/contactus.css">
   <meta name="theme-color" content="#fafafa">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ 
 </head>
 
 <body>
+    
   <!-- NAV BAR -->
 
 
@@ -31,34 +36,50 @@
     </div>
   </div>
   <div class="container py-5" id="Message">
+     <form class="needs-validation" id="userForm" novalidate>
     <div class="card ">
+        
       <div class="card-body">
+         
         <h4 class="text-left font-weight-bold message pb-5">Send A Message</h4>
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputUserName">User Name</label>
             <input type="text" class="form-control" id="inputUserName" name="useName" placeholder="User Name"
-              autocomplete="off">
+              autocomplete="off" required>
+              <div class="invalid-feedback">
+                  Please Enter UserName
+                </div>
           </div>
           <div class="form-group col-md-4">
             <label for="inputPhoneNumber">Phone Number</label>
             <input type="text" class="form-control" id="inputPhoneNumber" name="PhoneNo" placeholder="Phone Number"
-              autocomplete="off">
+              autocomplete="off" required>
+              <div class="invalid-feedback">
+                  Please Enter Phone Number
+                </div>
           </div>
           <div class="form-group col-md-4">
             <label for="inputEmail">Email</label>
-            <input type="text" class="form-control" id="inputEmail" name="Email" placeholder="Email" autocomplete="off">
+            <input type="email" class="form-control" id="inputEmail" name="Email" placeholder="Email" autocomplete="off" required>
+            <div class="invalid-feedback">
+                Please Provide Valid Email
+              </div>
           </div>
         </div>
         <div class="form-group">
           <label for="inputMessage">Message</label>
           <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+      
         </div>
         <div class="form-group text-right">
           <button class="btn btn-outline-success px-4 py-2" type="submit">Submit</button>
         </div>
       </div>
+    
     </div>
+     </form>
+  </div>
 
     <div class="container py-5">
       <h3 class="locate font-weight-bold">We are Located at</h3>
@@ -106,19 +127,19 @@
       </div>
     </div>
 
-    <!-- <div class="container">
-                  <div class="col text-white header-title">
-                      <h1 class="display-5 font-weight-bold text-primary">We are Located at</h1>
-                      <p class="text-left font-weight-bold text-success">Easy Way to Contact Us</p>
-                  </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4  px-5 ml-5">
-              <h3 class="font-weight-bold text-primary mb-3">Contact Information</h3>
-              <p class="contact"><i class="fa fa-map-marker pr-3 text-primary" aria-hidden="true"></i>3rd Floor, Pearl Enclave, Road No-5, Banjara Hills, Hyderabad, Telangana, India </p>
-            </div>
-            <div class="col-md-8"></div>
-          </div> -->
+    <script>
+          
+        let form = document.getElementById('userForm');
+
+        form.addEventListener("submit",function(){
+           
+          if(form.checkValidity() === false){
+              event.preventDefault();
+              event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        });
+        </script>
 
 
 
@@ -130,6 +151,7 @@
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+    
     <!-- Fontawesome -->
 </body>
 
