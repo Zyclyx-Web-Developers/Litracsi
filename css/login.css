@@ -1,0 +1,42 @@
+.form-right{
+    background-color:rgba(223, 224, 226, 0.959);
+
+}
+.form-control {
+   background: rgba(223, 224, 226, 0.959);
+   border-radius: 50px;
+   text-align: left;
+   border-bottom-left-radius:50px;
+   border-top-left-radius:50px;
+   border: none;
+}
+.btnLogin{
+    border-radius: 50px;
+}
+.input-group-text{
+    border-bottom-left-radius:50px;
+    border-top-left-radius:50px;
+    border: none;
+    outline: none;
+    background:rgba(223, 224, 226, 0.959);
+}
+.input-group-prepend {
+     margin-right:1px;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: rgba(223, 224, 226, 0.959);;
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+}
+.gradient{
+    background: rgb(5, 244, 244);
+background: linear-gradient(0deg, rgba(5,134,244,1) 0%, rgba(14,137,209,1) 26%, rgba(32,94,199,1) 74%, rgba(18,76,245,1) 100%);
+}
+.gradient p{
+    line-height: normal;
+}
+hr{
+    border: 0.3px solid white;
+}
