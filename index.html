@@ -11,19 +11,18 @@
   <link rel="apple-touch-icon" href="./img/Favicon.png">
   <link rel="icon" href="./img/Favicon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <!-- Bootstrap -->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
   <meta name="theme-color" content="#fafafa">
-
+</head>
 <body>
-
    <!-- Home Carousel -->
   <section>
 
@@ -70,36 +69,36 @@
 
    <!-- Home Card section -->
   <section>
-    <div class="container-fluid">   
-      <div class="row d-flex justify-content-center">
+    <div class="container my-5" id="home-sec">   
+      <div class="row d-flex homecard">
           <div class="col-4 homecardbg">  
-            <div class="p-3">
-                   <h4 class="title text-dark">Lorem Ipsum</h4>
+            <div class="mb-3">
+                   <h4 class="title text-danger">Lorem Ipsum</h4>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      
                       </p>
-                    <!-- <a href="#" class="btn text-white bg-primary">Read More</a>     -->
+                    <!-- <a href="#" class="btn text-white bg-primary">Read More</a>-->
                   </div>            
               </div>
               <div class="col-4 homecardbg">  
-                  <div class="p-3">
-                         <h4 class="title text-dark">Lorem Ipsum</h4>
+                  <div class="mb-3">
+                         <h4 class="title text-danger">Lorem Ipsum</h4>
                           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            
                             </p>
                           <!-- <a href="#" class="btn text-white bg-primary">Read More</a> -->
                         </div>            
                     </div>
                     <div class="col-4 homecardbg">  
-                        <div class="p-3">
-                               <h4 class="title text-dark">Lorem Ipsum</h4>
+                        <div class="mb-3">
+                               <h4 class="title text-danger">Lorem Ipsum</h4>
                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                 
                                   </p>
-                                <!-- <a href="#" class="btn text-white bg-primary">Read More</a>     -->
+                                <!-- <a href="#" class="btn text-white bg-primary">Read More</a> -->
                               </div>            
                           </div>
           </div>
@@ -109,15 +108,18 @@
 
    <!-- What we Do -->
    <section class="container py-5">
-        <div class="heading text-center position-relative py-4">
+     <div class="heading" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+     data-aos-delay="100" data-aos-duration="1000">
+        <div class=" text-center position-relative py-4">
             <h2 class="title-1"> What We Do</h2>           
             </div> 
             <p class="title-caption  text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <div class="row my-5">
+              </div>
+            <div class="row py-5">
                 <div class="col-3 what-we-do">
-                    <div class="card " style="width: 17rem;">
+                    <div class="card " style="width: 17rem;"  data-aos="fade-up" data-aos-delay="200"
+                    data-aos-duration="700">
                         <div class="card-body "> 
                           <img src="./img/icons/wedo4.svg">
                           <h5 class="card-title mt-3">
@@ -128,7 +130,8 @@
                       </div> 
                 </div>
          <div class="col-3 what-we-do">
-            <div class="card " style="width: 17rem;">
+            <div  class="card " style="width: 17rem;" style="width: 17rem;"  data-aos="fade-up" data-aos-delay="350"
+            data-aos-duration="700">
                 <div class="card-body text-center"> 
                   <img src="./img/icons/wedo1.svg">
                   <h5 class="card-title mt-3">
@@ -136,11 +139,11 @@
                   </h5>
                   <p class="card-text">Some quick example text to build on the card.</p>
                 </div>
-              </div>   
-        
+              </div>           
         </div>
         <div class="col-3 what-we-do">
-            <div class="card " style="width: 17rem;">
+            <div class="card " style="width: 17rem;" style="width: 17rem;"  data-aos="fade-up" data-aos-delay="400"
+            data-aos-duration="700">
                 <div class="card-body "> 
                   <img src="./img/icons/wedo2.svg">
                   <h5 class="card-title mt-3">
@@ -151,7 +154,8 @@
               </div> 
         </div>
         <div class="col-3 what-we-do">
-            <div class="card " style="width: 17rem;">
+            <div class="card " style="width: 17rem;" style="width: 17rem;"  data-aos="fade-up" data-aos-delay="500"
+            data-aos-duration="700">
                 <div class="card-body "> 
                   <img src="./img/icons/wedo3.svg">
                   <h5 class="card-title mt-3">
@@ -162,8 +166,6 @@
               </div> 
         </div>   
             </div>
-
-
   </section>
    <!-- What We Do End -->
 
@@ -173,9 +175,13 @@
    <!-- UpComming Events -->
 <section class="container-fluid p-0" id="events">
 <div class=" Event-bg-top position-relative overlay">
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+     data-aos-delay="100" data-aos-duration="1000">
   <h2 class=" title-1 text-center text-white position-relative">UpComming Events</h2>
+</div>
     <div class="eventsCards">
-        <div class="card mr-4">
+        <div class="card mr-4" data-aos="fade-up" data-aos-delay="200"
+        data-aos-duration="1000">
             <img src="./img/carousel2.jpg" class="card-img-top" alt="...">
             <div class="card-body">                                 
                     <p class="Event-timmings"><i class="fa fa-clock-o text-danger mr-2"></i> Thu, Feb 13, 2020, 10:00 AM</p>
@@ -184,7 +190,8 @@
             </div>
           </div>      
 
-            <div class="card mr-4">
+            <div class="card mr-4" data-aos="fade-up" data-aos-delay="350"
+            data-aos-duration="1000">
                 <img src="./img/Events.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="Event-timmings"><i class="fa fa-clock-o text-danger mr-2"></i>Sat, Jan 04, 2020, 09:30 AM</p>
@@ -193,7 +200,8 @@
                 </div>
               </div>    
           
-                <div class="card mr-3">
+                <div class="card mr-3" data-aos="fade-up" data-aos-delay="550"
+                data-aos-duration="1000">
                     <img src="./img/carousel3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="Event-timmings"><i class="fa fa-clock-o text-danger mr-2"></i>Thu, Feb 20, 2020, 9:00 AM</p>
@@ -204,8 +212,9 @@
                 </div>                        
       
 </div>
-<div class="text-center">
-<div class=" btn mx-auto btn-lg moreEventBtn">More Events
+<div class="text-center" >
+<div data-aos="fade-up" data-aos-delay="800"
+data-aos-duration="800" class="btn mx-auto btn-lg moreEventBtn" style="cursor: pointer;">More Events
   </div>  
 </div>
 </section>
@@ -224,11 +233,16 @@
 </div>
 <div class="col-6">
   <div class="m-4">
+    <div class="" data-aos="fade-right" data-aos-delay="200"
+    data-aos-duration="600">
   <h2 class="">WelCome to Our International Charity Since 1985</h2>
   <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
      cupiditate expedita rem aliquid quod at deleniti necessitatibus sed id reprehenderit,
      modi quibusdam ipsa iste est inventore minima totam enim eos.</p>
-     <div class=" btn btn-outline-danger btn-lg mt-4">Read More
+    </div>
+     <div href="#" class=" btn btn-lg mt-3 d-flex justify-content-end videoBtn" >
+       <img data-aos="fade-right" data-aos-delay="500"
+     data-aos-duration="1500" width="50px" src="img/icons/arrow.svg" />
       </div> 
     </div>
 </div>
@@ -242,37 +256,40 @@
 <!-- Counting Section -->
 <section>
 <div class="container-fluid counter">
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+     data-aos-delay="100" data-aos-duration="1000">
     <div class="heading text-center position-relative py-4 ">
         <h2 class="title-1 mt-3"> Successfull Stats About Us</h2>           
         </div> 
         <p class="title-caption  text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
 <div class="container">
 <div class="row d-flex justify-content-center py-5">
 <div class="text-center col-3">
 <img class="mb-3" width="47px" src="./img/icons/counter4.svg">
-<h2 class="font-weight-bolder">156</h2>
+<h2 class="font-weight-bolder" data-toggle="counter-up">156</h2>
 <h5 class="pb-5">Successful Projects</h5>
 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
 </div>
 
 <div class="text-center col-3">
     <img class="mb-3" width="50px" src="./img/icons/counter3.svg">
-    <h2 class="font-weight-bolder">1256</h2>
+    <h2 class="font-weight-bolder" data-toggle="counter-up">1256</h2>
     <h5 class="pb-5">Society Members</h5>
     <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> -->
     </div>
 
     <div class="text-center col-3">
         <img class="mb-3" width="50px" src="./img/icons/counter2.svg">
-        <h2 class="font-weight-bolder">176</h2>
+        <h2 class="font-weight-bolder" data-toggle="counter-up">176</h2>
         <h5 class="pb-5">Professional Impact</h5>
         <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
         </div>
 
         <div class="text-center col-3">
             <img class="mb-3" width="50px" src="./img/icons/counter1.svg">
-            <h2 class="font-weight-bolder">2564</h2>
+            <h2 class="font-weight-bolder" data-toggle="counter-up">2564</h2>
             <h5 class="pb-5">Total Members</h5>
             <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
             </div>
@@ -290,11 +307,12 @@
   <div class="row">
     <div class="col-4"></div>
     <div class="col-8 "> 
-      <div class="vision-text text-center">
- <h3>
+      <div class="vision-text text-center" data-aos="zoom-in" data-aos-delay="400"
+      data-aos-duration="1000">
+  <h3>
   we as Organization, Our Mission to protect
   People Who are suffering from 
-</h3>
+ </h3>
 <h1 class="font-weight-bolder red">LIVER ISSUES</h1>
 </div>
 </div>
@@ -306,11 +324,14 @@
 
 <!-- News and Blogs -->
 <section class="container py-4">
+    <div data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-sine"
+     data-aos-delay="100" data-aos-duration="1000">
     <div class="heading text-center position-relative py-4 ">
         <h2 class="title-1 mt-3"> News and Blogs</h2>           
         </div> 
         <p class="title-caption  text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
 <div class=" row py-4">
 <div class="col-7">
     <div class="tab-content" id="myTabContent">
@@ -319,24 +340,32 @@
           <p class="red font-weight-bolder mt-3">16 May 2019</p>
           <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam laudantium reprehenderit.
             <!-- <span class="readmore"></span> -->
-            <span><img width="30px" src='./img/icons/arrow.svg'> </span>
+            <span class="videoBtn"><img data-aos="fade-right" data-aos-delay="500"
+              data-aos-duration="500" width="30px" src='./img/icons/arrow.svg'> </span>
           </h5>
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <img class="rounded"  height="380px" width="637px" src="./img/Events.jpg">
             <p class="red font-weight-bolder mt-3">22 June 2019</p>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam laudantium reprehenderit.</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam laudantium reprehenderit.
+              <span class="videoBtn"><img data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="500" width="30px" src='./img/icons/arrow.svg'> </span>
+            </h5>
         </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <img class="rounded" height="380px" width="637px" src="./img/img9.png">
             <p class="red font-weight-bolder mt-3">02 Dec 2019</p>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam laudantium reprehenderit.</h5>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aperiam laudantium reprehenderit.
+              <span class="videoBtn"><img data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="500" width="30px" src='./img/icons/arrow.svg'> </span>
+            </h5>
         </div>
       </div>
 </div>
 <div class="col-5">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item row">
+        <li class="nav-item row" data-aos="fade-left" data-aos-delay="200"
+        data-aos-duration="1000">
           <a class="nav-link col-6" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
               <img class="rounded"  height="auto" width="200px" src="./img/docter1.jpg"></a>
               <p class="col-6 mt-3">
@@ -344,7 +373,8 @@
                <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span> 
              </p>
         </li>
-        <li class="nav-item row">
+        <li class="nav-item row" data-aos="fade-left" data-aos-delay="500"
+        data-aos-duration="1000">
           <a class="nav-link col-6" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
               <img class="rounded" height="auto" width="200px" src="./img/Events.jpg">            
             </a>
@@ -353,7 +383,8 @@
                 <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span> 
                 </p>
         </li>
-        <li class="nav-item row">
+        <li class="nav-item row" data-aos="fade-left" data-aos-delay="700"
+        data-aos-duration="1000">
           <a class="nav-link col-6" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
               <img class="rounded" height="auto" width="200px" src="./img/img9.png">            
             </a>
@@ -368,12 +399,7 @@
 
 </div>
 </section>
-<!-- News and Blogs End-->
-
-
-
-
- 
+<!-- News and Blogs End--> 
 
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -385,11 +411,12 @@
   <!-- Fontawesome -->
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/vendor/aos.js"></script>
+  <script src="./js/vendor/waypoints.min.js"></script>
+  <script src="./js/vendor/counterup.min.js"></script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script> 
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-
 
 </body>
 </html>

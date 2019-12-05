@@ -1,3 +1,30 @@
+jQuery(document).ready(function($) {
+  $('[data-toggle="counter-up"]').counterUp({
+      delay: 10,
+      time: 800
+  });
+});
+
+window.onload = function(){
+  // Initiate animate on scroll library
+  AOS.init({
+    once:true,
+    mirror:false
+  });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
   var method;

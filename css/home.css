@@ -25,15 +25,6 @@
 .overlay1{
     position: relative;
 }
-/* .overlay1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:rgba(79, 85, 84, 0.4);
-} */
 
 .overlay{
     position: relative;
@@ -61,11 +52,24 @@ mix-blend-mode:overlay;
 }
 .homecardbg{
     background: hsl(194, 71%, 74%);
+    text-align: center;
     padding: 30px;
+   
     /* border: .5px solid rgba(129, 129, 129, .5); */
+}
+.home-sec{
+    position: relative;     
+}
+.homecard{   
+    position: absolute;
+    top:90%;
+    right: 8%;
+    left: 8%;
+    bottom: 0;   
 }
 
 /* What We Do */
+
 .what-we-do .card{
     border: none !important;
     text-align: center;
@@ -73,6 +77,9 @@ mix-blend-mode:overlay;
 }
 .what-we-do .card:hover{
    box-shadow: 0 6px 13px rgba(214,214,214,.75);
+}
+.heading{
+    padding-top: 10rem;
 }
 
 /* What We Do End */
@@ -101,6 +108,10 @@ background-size: cover;
     top: calc(88% - -16px);
     left: 50%;
     transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+ .card:hover img{
+ transform: scale(1);
 }
 .eventsCards .card{
     width: 350px;
@@ -109,6 +120,8 @@ background-size: cover;
     overflow: hidden;
     border: none;
 }
+
+
 .Event-timmings{
     color: #959393;
 }
@@ -127,6 +140,9 @@ margin-top: 240px;
 /* Video-Section */
 .video{
     border-radius: 10px;
+}
+.videoBtn img{
+    cursor: pointer;
 }
 /* videoideo Section end */
 
