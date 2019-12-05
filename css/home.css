@@ -110,9 +110,7 @@ background-size: cover;
     transform: translate(-50%,-50%);
     overflow: hidden;
 }
- .card:hover img{
- transform: scale(1);
-}
+
 .eventsCards .card{
     width: 350px;
     border-radius: 10px;
